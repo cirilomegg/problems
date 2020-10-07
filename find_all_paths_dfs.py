@@ -56,7 +56,7 @@ def dfs(graph, visited, path, start, end):
     path.pop()
 
 
-def find_path(graph, start, end):
+def find_all_paths(graph, start, end):
     visited = {}
     path = []
     dfs(graph, visited, path, start, end)
@@ -67,4 +67,4 @@ if __name__ == "__main__":
              Edge(2, 0), Edge(2, 1), Edge(1, 3)]
 
     graph = Graph(edges)
-    find_path(graph.get(), 0, 3)
+    find_all_paths(graph.get(), 0, 3)
